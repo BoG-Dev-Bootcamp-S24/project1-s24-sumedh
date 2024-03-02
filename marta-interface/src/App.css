@@ -1,0 +1,234 @@
+.App {
+  text-align: center;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+hr {
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.TrainListMain {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.LargeContainer {
+  display: flex;
+}
+
+.nbContainer h3 {
+  color: azure;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.colored {
+  color: white;
+  margin: 15px;
+  padding: 5px;
+  width: 120px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+
+.train-list {
+  border-collapse: collapse;
+  overflow-y: scroll;
+  height: 74vh;
+  width: 1210px;
+}
+
+.train-list .train {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+.train {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.train-icon {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.train-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.train-line {
+  font-weight: bold;
+}
+
+.train .train-destination {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.train .train-arrival {
+  color: green;
+  font-weight: bold;
+}
+
+.train .train-status {
+  margin-left: 10px;
+}
+
+.on-time {
+  color: green;
+}
+
+.delayed {
+  color: red;
+}
+
+
+.train {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-top: gray solid 1px;
+  padding: 10px 0; 
+}
+
+.train-icon {
+  font-size: 400%;
+  margin-left: 2%;
+  width: 8%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.train-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  width: calc(90% - 2%);
+}
+
+.train-line {
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.noTrains {
+  display: flex;
+  justify-content: center;
+}
+
+.train-destination, .train-arrival, .train-status {
+  margin-left: 10px;
+}
+
+.train-status {
+  color: green;
+  font-weight: bold;
+}
+
+.on-time {
+  color: green;
+}
+
+.delayed {
+  color: red;
+}
+
+.nbContainer {
+  margin-top: 0;
+  background-color: rgb(39, 39, 39);
+  height: 83vh;
+  width: 300px;
+  overflow-y: scroll;
+}
+
+h3 {
+  color: azure;
+  display: flex;
+  justify-content: center;
+}
+
+.navBox {
+  display: flex;
+  justify-content: center;
+  font-size: 110%;
+  color: lightgrey;
+
+  .stationList {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      .stationButton {
+          display: flex;
+          justify-content: center;
+          background-color: rgb(45,45,45);
+          border: 0px solid black;
+          border-bottom: white 1px solid;
+          margin-top: 5%;
+          cursor: pointer;
+          color: white;
+          font-size: 110%;
+      }
+  }
+}
+
+.filterButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .filterButton {
+      width: 15%;      
+      font-size: 120%;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+}
